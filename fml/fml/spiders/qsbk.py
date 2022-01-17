@@ -14,7 +14,7 @@ class QsbkSpider(scrapy.Spider):
     start_urls = ['https://www.qiushibaike.com/text/page/1/']
     base_domain = 'https://www.qiushibaike.com'
     
-    def parse(self, response):.
+    def parse(self, response):
         storys = response.xpath("//div[@id='content-left']/div")
         print("#"*120)
         for story in storys:
